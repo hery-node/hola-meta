@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import UserView from "./views/UserView.vue";
 
-import { init_axios } from "./components";
+import { init_axios } from "hola-web";
 import { init_app } from "./plugins";
 
 Vue.config.productionTip = false;
