@@ -1,0 +1,8 @@
+{
+  "name": "stockgpt_server",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "hola-server": "^0.6.9"
+  }
+}
