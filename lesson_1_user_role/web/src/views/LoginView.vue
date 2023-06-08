@@ -63,9 +63,9 @@ export default {
       this.loading = true;
 
       const url = "/user/login";
-      const { code } = await axios_post(url, { name: this.name, password: this.password });
+      const { code, root } = await axios_post(url, { name: this.name, password: this.password });
       if (is_success_response(code)) {
-        this.$router.push({ name: "user" });
+        this.$router.push({ name: root ? "user" : "" });
       } else {
         this.snackbar = true;
         this.result = this.$t("login.not_matched");

@@ -5,6 +5,7 @@ import { setup_vuetify } from "./vuetify";
 import { setup_echarts } from "./echarts";
 import { setup_i18n } from "./i18n";
 import { setup_components } from "hola-web";
+import { setup_my_components } from "../components";
 
 function init_app(App, routes, locales, locale = "en") {
     Vue.use(Vuex);
@@ -17,6 +18,7 @@ function init_app(App, routes, locales, locale = "en") {
 
     setup_echarts();
     setup_components();
+    setup_my_components();
 
     return new Vue({
         router,

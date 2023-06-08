@@ -9,8 +9,8 @@ const routes = [
   { path: "*", component: LoginView }
 ];
 
-const get_menus = (ctx) => {
-  return [
+const get_menus = (ctx, role) => {
+  const menus = role == "admin" ? [
     {
       title: ctx.$t("menu.app_console"),
       menus: [
@@ -18,7 +18,8 @@ const get_menus = (ctx) => {
         { icon: "mdi-bug-outline", title: ctx.$t("menu.log_view"), route: "/log" },
       ],
     },
-  ]
+  ] : [];
+  return menus;
 }
 
 export { routes, get_menus };

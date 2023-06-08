@@ -39,10 +39,14 @@ module.exports = init_router({
                 user.id = user._id + "";
                 user.role = user.role;
                 req.session.user = user;
-                res.json({ code: SUCCESS, root: is_root_role(user.role) });
+                res.json({ code: SUCCESS, role: user.role, root: is_root_role(user.role) });
             } else {
                 res.json({ code: NOT_FOUND, root: false, err: "name and password aren't matched" });
             }
+        }));
+
+        router.get('/role', wrap_http(async function (req, res) {
+            res.json({ code: SUCCESS, role: req.session.user ? req.session.user.role : "" });
         }));
 
         router.get('/logout', wrap_http(async function (req, res) {

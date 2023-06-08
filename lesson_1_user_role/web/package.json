@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "hola-web": "^0.10.11"
+    "hola-web": "^0.10.12"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
