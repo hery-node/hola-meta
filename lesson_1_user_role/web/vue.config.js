@@ -11,7 +11,7 @@ const cdn = local_deploy ? {
     'https://cdn.jsdelivr.net/npm/chartist@1.3.0/dist/index.min.css',
     'https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css',
     'https://cdn.jsdelivr.net/npm/vue-echarts@6.5.5/dist/csp/style.min.css',
-    'https://cdn.jsdelivr.net/npm/hola-web@0.10.8/dist/hola-web.css'
+    'https://cdn.jsdelivr.net/npm/hola-web@0.10.11/dist/hola-web.css'
   ],
   js: [
     'https://cdn.jsdelivr.net/npm/axios@1.4.0/dist/axios.min.js',
@@ -24,7 +24,7 @@ const cdn = local_deploy ? {
     'https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js',
     'https://cdn.jsdelivr.net/npm/vue-echarts@6.5.5/dist/index.umd.min.js',
     'https://cdn.jsdelivr.net/npm/chartist@1.3.0/dist/index.umd.min.js',
-    'https://cdn.jsdelivr.net/npm/hola-web@0.10.8/dist/hola-web.umd.min.js'
+    'https://cdn.jsdelivr.net/npm/hola-web@0.10.11/dist/hola-web.umd.min.js'
   ]
 };
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h-crud ref="table" :entity="entity" :mode="mode" :item-label-key="item_label_key" :sort-key="sort_key" :sort-desc="sort_desc" :search-cols="search_cols" :headers="headers" :search-fields="search_fields" :expand-fields="expand_fields" :toolbars="toolbars"></h-crud>
+    <h-crud ref="table" :entity="entity" :item-label-key="item_label_key" :sort-key="sort_key" :sort-desc="sort_desc" :search-cols="search_cols" :headers="headers" :search-fields="search_fields" :expand-fields="expand_fields" :toolbars="toolbars"></h-crud>
   </div>
 </template>
 
@@ -11,7 +11,6 @@ export default {
   data() {
     return {
       entity: "log",
-      mode: "drs",
       item_label_key: "time",
       search_cols: 4,
       sort_key: ["time"],

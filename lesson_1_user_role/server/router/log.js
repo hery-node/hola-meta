@@ -7,7 +7,7 @@ module.exports = init_router({
     readable: true,
     deleteable: true,
     primary_keys: ["time"],
-    roles: ["admin:drs"],
+    roles: ["admin:*"],
     fields: [
         { name: "time", type: "string" },
         { name: "category", type: "string" },

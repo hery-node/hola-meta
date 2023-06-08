@@ -15,7 +15,7 @@ module.exports = init_router({
     roles: ["admin:*"],
     fields: [
         { name: "name", required: true },
-        { name: "password", type: "password", required: true, secure: true, list: false, search: false, update: false },
+        { name: "password", type: "password", required: true, secure: true, list: false, search: false, view: "1" },
         { name: "role", type: "role", required: true },
         { name: "phone", type: "string" },
         { name: "email", type: "string" },
@@ -43,6 +43,12 @@ module.exports = init_router({
             } else {
                 res.json({ code: NOT_FOUND, root: false, err: "name and password aren't matched" });
             }
+        }));
+
+        router.get('/logout', wrap_http(async function (req, res) {
+            req.session.user = null;
+            req.session.root = null;
+            res.json({ code: SUCCESS });
         }));
     }
 });

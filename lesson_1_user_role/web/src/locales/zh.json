@@ -117,6 +117,9 @@
     "user_view": "用户列表",
     "log_view": "系统日志"
   },
+  "app": {
+    "logout_hint": "退出系统"
+  },
   "login": {
     "title": "股票自标签",
     "name": "用户名",
