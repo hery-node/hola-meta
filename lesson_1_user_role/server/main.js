@@ -10,7 +10,7 @@ init_express_server(__dirname, "service_port", async () => {
 
     const user_entity = new Entity(get_entity_meta("user"));
     const pwd_type = get_type("password");
-    const pwd = pwd_type.convert("intel@123")["value"];
+    const pwd = pwd_type.convert("admin")["value"];
     const users = [
         { name: "admin", password: pwd, role: "admin", status: 1 },
     ];
@@ -19,5 +19,5 @@ init_express_server(__dirname, "service_port", async () => {
         await user_entity.update({ name: user.name }, user);
     }
 
-    console.log("stock_gpt server is successfully started");
+    console.log("main server is successfully started");
 });

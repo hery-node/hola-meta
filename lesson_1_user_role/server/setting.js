@@ -2,10 +2,10 @@ const dev_mode = true;
 
 const settings = {
     encrypt: {
-        key: "NNBB&(*9sisdidsi*&HNIOKK"
+        key: "my_key"
     },
     mongo: {
-        url: 'mongodb://127.0.0.1/stockgpt',
+        url: 'mongodb://127.0.0.1/demo',
         pool: 10
     },
     log: {
@@ -18,7 +18,6 @@ const settings = {
         { name: "admin", root: true },
         { name: "user" },
         { name: "vip" },
-        { name: "vvip" },
     ],
 
     server: {
@@ -29,7 +28,7 @@ const settings = {
         exclude_urls: ["/"],
         session: {
             cookie_max_age: 1000 * 60 * 60 * 24 * 256 * 10,// ten years
-            secret: 'JKK*((_&%^diweiwe'
+            secret: 'my_secret'
         },
         threshold: {
             max_download_size: 5000,

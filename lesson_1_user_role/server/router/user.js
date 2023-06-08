@@ -1,7 +1,7 @@
 const { wrap_http } = require('hola-server').err;
+const { required_post_params } = require('hola-server').params;
+const { NO_PARAMS, NOT_FOUND, SUCCESS } = require('hola-server').code;
 const { init_router, get_type, Entity, is_root_role } = require('hola-server');
-const { NO_PARAMS, NOT_FOUND, SUCCESS, NO_RIGHTS, ERROR } = require('hola-server').code;
-const { required_post_params, required_get_params } = require('hola-server').params;
 
 module.exports = init_router({
     collection: "user",
